@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Белокриницкая](https://up.htmlacademy.ru/adaptive/15/user/563419).
-* Наставник: `Неизвестно`.
+* Наставник: Без наставника.
 
 ---
 
