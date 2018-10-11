@@ -5,68 +5,70 @@
     <title>Cat Energy — функциональное питание для котов</title>
   </head>
 
-  <body>
-    <header>
-      <a>
-        <img src="http://placehold.it/33x38" width="33" height="38" alt="">
-        <picture>
-          <img src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
-        </picture>
-      </a>
-      <nav>
-        <button type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul>
-          <li><a>Главная</a></li>
-          <li><a href="catalog.html">Каталог продукции</a></li>
-          <li><a href="form.html">Подбор программы</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body class="page">
+    <header class="page__header page-header page-header--home">
+      <div class="page-header__menu">
+        <a class="page-header__logo">
+          <img src="http://placehold.it/33x38" width="33" height="38" alt="">
+          <picture>
+            <img src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+          </picture>
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li><a>Главная</a></li>
+            <li><a href="catalog.html">Каталог продукции</a></li>
+            <li><a href="form.html">Подбор программы</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <main>
-      <div>
-        <h1>Функциональное питание для котов <span class="visually-hidden">Cat Energy</span></h1>
+      <div class="page-header__intro">
+        <h1 class="page-header__title">Функциональное питание для котов</h1>
         <b>Занялся собой? Займись котом!</b>
         <p>
           <picture>
             <img src="http://placehold.it/280x270" width="280" height="270" alt="Cat Energy Pro со вкусом курицы">
           </picture>
         </p>
-        <a href="form.html">Подобрать программу</a>
+        <a class="btn" href="form.html">Подобрать программу</a>
       </div>
+    </header>
 
-      <section>
+    <main class="page__main">
+      <section class="categories">
         <h2 class="visually-hidden">Серии продуктов</h2>
-        <ul>
-          <li>
-            <h3>Похудение</h3>
+        <ul class="categories__list">
+          <li class="categories__item categories__item--lose">
+            <h3 class="categories__name">Похудение</h3>
             <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="catalog.html">Каталог Slim</a>
+            <a class="categories__link" href="catalog.html">Каталог Slim</a>
           </li>
-          <li>
-            <h3>Набор массы</h3>
+          <li class="categories__item categories__item--gain">
+            <h3 class="categories__name">Набор массы</h3>
             <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a href="catalog.html">Каталог Pro</a>
+            <a class="categories__link" href="catalog.html">Каталог Pro</a>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Как это работает</h2>
-        <ol>
-          <li>Функциональное питание содержит только полезные питательные вещества.</li>
-          <li>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li>Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+      <section class="advantages">
+        <h2 class="advantages__title">Как это работает</h2>
+        <ol class="advantages__list">
+          <li class="advantages__item">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="advantages__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="advantages__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="advantages__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
         </ol>
       </section>
 
-      <section>
-        <h2>Живой пример</h2>
+      <section class="example">
+        <h2 class="example__title">Живой пример</h2>
         <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <table>
+        <table class="example__results">
           <tbody>
             <tr>
               <th scope="row">Снижение веса</th>
@@ -83,62 +85,66 @@
           </tbody>
         </table>
 
-        <div>
+        <div class="example__compare image-compare">
           <figure>
             <picture>
               <img src="http://placehold.it/311x232" width="311" height="232" alt="Толстый кот Борис">
             </picture>
-            <figcaption><button type="button">Было</button></figcaption>
+            <figcaption>Было</figcaption>
           </figure>
-          <div>
-            <div tabindex="0"></div>
-          </div>
           <figure>
             <picture>
               <img src="http://placehold.it/251x240" width="251" height="240" alt="Худой кот Борис">
             </picture>
-            <figcaption><button type="button">Стало</button></figcaption>
+            <figcaption>Стало</figcaption>
           </figure>
+          <div class="image-compare__controls">
+            <button class="image-compare__btn image-compare__btn--before" type="button">Было</button>
+            <div class="image-compare__scale">
+              <div class="image-compare__thumb" tabindex="0"></div>
+            </div>
+            <button class="image-compare__btn image-compare__btn--after" type="button">Стало</button>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <section>
-        <h2>Контакты</h2>
-        <div>
-          <b>Приглашаем к сотрудничеству дилеров!</b>
-          <p>ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+    <footer class="page__footer page-footer">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__info">
+          <b class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
         <picture>
           <img src="http://placehold.it/320x400" width="320" height="400" alt="Наш офис по адресу: Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
         </picture>
       </section>
 
-      <div>
-        <p>
+      <div class="page-footer__bottom">
+        <p class="page-footer__side">
           <a>
             <img src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
           </a>
         </p>
 
-        <ul>
-          <li>
-            <a href="#" aria-label="ВКонтакте">
+        <ul class="page-footer__center social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="ВКонтакте">
               <svg width="30" height="16" role="img">
                 <use xlink:href="#"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#" aria-label="Инстаграм">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Инстаграм">
               <svg width="23" height="23" role="img">
                 <use xlink:href="#"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="#" aria-label="Фейсбук">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Фейсбук">
               <svg width="14" height="28" role="img">
                 <use xlink:href="#"></use>
               </svg>
@@ -146,10 +152,10 @@
           </li>
         </ul>
 
-        <p>
-          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <p class="page-footer__side">
+          <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             HTML Academy
-            <svg width="27" height="34" role="img">
+            <svg class="copyright__logo" width="27" height="34" role="img">
               <use xlink:href="#"></use>
             </svg>
           </a>
