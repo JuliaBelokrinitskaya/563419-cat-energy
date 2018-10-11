@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Подбор программы — Cat Energy</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="http://placehold.it/33x38" width="33" height="38" alt="">
+        <picture>
+          <img src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <nav>
+        <button type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог продукции</a></li>
+          <li><a>Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Подбор программы</h1>
+      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Данные кота</legend>
+          <p>
+            <label for="cat-name">Имя:*</label>
+            <input id="cat-name" type="text" name="cat_name" placeholder="Барсик" required>
+          </p>
+          <p>
+            <label for="cat-weight">Вес (кг):*</label>
+            <input id="cat-weight" type="number" name="cat_weight" min="1" step="1" placeholder="7" required>
+          </p>
+          <p>
+            <label for="cat-age">Возраст (лет):</label>
+            <input id="cat-age" type="number" name="cat_age" min="1" step="1" placeholder="7">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Цель</legend>
+          <ul>
+            <li>
+              <input id="goal-loose" type="radio" name="goal" value="loose" checked>
+              <label for="goal-loose">Похудение</label>
+            </li>
+            <li>
+              <input id="goal-gain" type="radio" name="goal" value="gain">
+              <label for="goal-gain">Набор массы</label>
+            </li>
+            <li>
+              <input id="goal-unknown" type="radio" name="goal" value="unknown">
+              <label for="goal-unknown">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Контактные данные (владельца кота)</legend>
+          <p>
+            <label for="owner-email">E-mail:*</label>
+            <input id="owner-email" type="email" name="owner_email" placeholder="kuklachev@gmail.com" required>
+            <svg width="17" height="13" aria-hidden="true" role="presentation">
+              <use xlink:href="#"></use>
+            </svg>
+          </p>
+          <p>
+            <label for="owner-phone">Телефон:*</label>
+            <input id="owner-phone" type="tel" name="owner_phone" placeholder="8 (960) 900-60-90" required>
+            <svg width="20" height="20" aria-hidden="true" role="presentation">
+              <use xlink:href="#"></use>
+            </svg>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="cat-notes">Комментарий</label>
+          <textarea id="cat-notes" name="cat_notes" cols="30" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </p>
+
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <ul>
+            <li>
+              <input id="related-sweetener" type="checkbox" name="related_sweetener" checked>
+              <label for="related-sweetener">Сахарозаменитель</label>
+            </li>
+            <li>
+              <input id="related-water" type="checkbox" name="related_water">
+              <label for="related-water">Питьевая вода</label>
+            </li>
+            <li>
+              <input id="related-milk" type="checkbox" name="related_milk">
+              <label for="related-milk">Молоко</label>
+            </li>
+            <li>
+              <input id="related-vitamins" type="checkbox" name="related_vitamins">
+              <label for="related-vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Отправить заявку</button>
+        <small>* — Обязательные поля</small>
+      </form>
+    </main>
+
+    <footer>
+      <section>
+        <h2>Контакты</h2>
+        <div>
+          <b>Приглашаем к сотрудничеству дилеров!</b>
+          <p>ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+        </div>
+        <picture>
+          <img src="http://placehold.it/320x400" width="320" height="400" alt="Наш офис по адресу: Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+        </picture>
+      </section>
+
+      <div>
+        <p>
+          <a href="index.html">
+            <img src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+          </a>
+        </p>
+
+        <ul>
+          <li>
+            <a href="#" aria-label="ВКонтакте">
+              <svg width="30" height="16" role="img">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Инстаграм">
+              <svg width="23" height="23" role="img">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Фейсбук">
+              <svg width="14" height="28" role="img">
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            HTML Academy
+            <svg width="27" height="34" role="img">
+              <use xlink:href="#"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
