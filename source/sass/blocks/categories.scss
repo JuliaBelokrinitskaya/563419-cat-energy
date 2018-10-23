@@ -142,8 +142,8 @@
   }
 
   .categories__text {
-    width: calc(371 / 708 * 100%);
-    min-width: 371px;
+    width: calc(372 / 708 * 100%);
+    min-width: 372px;
     max-width: 505px;
     min-height: 96px;
     padding: 0;
@@ -151,8 +151,12 @@
     border-bottom: none;
   }
 
+  .categories__text span {
+    padding-right: 9px;
+  }
+
   .categories__item--gain .categories__text {
-    min-width: 340px;
+    min-width: 343px;
   }
 
   .categories__link {

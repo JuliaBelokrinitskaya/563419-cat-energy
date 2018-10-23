@@ -17,17 +17,13 @@
 }
 
 .page__wrapper {
-  width: 100%;
   padding: 0 $padding-mobile;
-  box-sizing: border-box;
 
   @media (min-width: $width-tablet) {
     padding: 0 $padding-tablet;
   }
 
   @media (min-width: $width-desktop) {
-    max-width: $width-desktop;
-    margin: 0 auto;
-    padding: 0 $padding-desktop;
+    @include desktop-container;
   }
 }

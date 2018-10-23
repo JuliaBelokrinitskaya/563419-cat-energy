@@ -6,14 +6,6 @@
   color: $color;
 }
 
-@mixin title {
-  @include font-primary(36px, 60px);
-
-  @media (min-width: $width-tablet) {
-    font-size: 60px;
-  }
-}
-
 @mixin font-set($font-size, $line-height) {
   font-size: $font-size;
   line-height: $line-height;
@@ -25,6 +17,13 @@
   margin-bottom: 0;
 
   list-style: none;
+}
+
+@mixin desktop-container {
+  max-width: $width-desktop;
+  margin: 0 auto;
+  padding: 0 $padding-desktop;
+  box-sizing: border-box;
 }
 
 @mixin image-wrapper($width, $height) {
