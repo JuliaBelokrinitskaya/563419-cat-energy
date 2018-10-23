@@ -1,0 +1,49 @@
+.btn {
+  display: block;
+  padding: 10px 10px 12px;
+  box-sizing: border-box;
+
+  @include font-primary(16px, 20px, $color-text-light);
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-accent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent-dark;
+  }
+
+  &:active {
+    color: rgba($color-text-light, 0.3);
+  }
+}
+
+.btn--big {
+  @media (min-width: $width-tablet) {
+    display: inline-block;
+    padding: 15px 20px 17px;
+
+    @include font-set(20px, 20px);
+
+    vertical-align: baseline;
+  }
+}
+
+.btn--light {
+  color: $color-text-main;
+
+  background-color: $color-bg-light;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba($color-text-main, 0.3);
+  }
+}

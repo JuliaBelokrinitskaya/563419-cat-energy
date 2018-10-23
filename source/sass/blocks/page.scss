@@ -1,0 +1,33 @@
+.page {
+  display: flex;
+  flex-direction: column;
+
+  min-width: $width-mobile;
+  min-height: 100vh;
+  height: 320px;
+  box-sizing: border-box;
+}
+
+.page__item {
+  flex-shrink: 0;
+}
+
+.page__item--main {
+  flex-grow: 1;
+}
+
+.page__wrapper {
+  width: 100%;
+  padding: 0 $padding-mobile;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 $padding-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: $width-desktop;
+    margin: 0 auto;
+    padding: 0 $padding-desktop;
+  }
+}

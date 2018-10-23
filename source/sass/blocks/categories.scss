@@ -1,0 +1,233 @@
+.categories__list {
+  @include list-reset;
+}
+
+.categories__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding: 30px 20px 19px;
+
+  background-color: $color-bg-light;
+}
+
+.categories__item:last-child {
+  margin-bottom: 0;
+}
+
+.categories__item::before {
+  content: "";
+
+  position: absolute;
+  top: 24px;
+  left: 22px;
+
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  background-color: $color-accent;
+  border-radius: 50%;
+}
+
+.categories__item::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 90px;
+  height: 80px;
+
+  background-repeat: no-repeat;
+}
+
+.categories__item--lose::after {
+  background-image: url("../img/icon-cat-slim.svg");
+  background-position: 30px 22px;
+  background-size: 35px 49px;
+}
+
+.categories__item--gain::after {
+  background-image: url("../img/icon-cat-pro.svg");
+  background-position: 13px 35px;
+  background-size: 67px 28px;
+}
+
+.categories__title {
+  margin-top: 0;
+  margin-left: 70px;
+  margin-bottom: 29px;
+
+  @include font-primary(24px, 37px);
+
+  text-transform: uppercase;
+}
+
+.categories__text {
+  padding-right: (8px / 240px * 100%);
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid #dadada;
+}
+
+.categories__link {
+  display: inline-block;
+  margin-top: 5px;
+  padding-right: 45px;
+
+  @include font-primary(16px, 16px);
+
+  vertical-align: baseline;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: center right 9px;
+  background-size: 24px 11px;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-position: center right;
+    background-size: 33px 11px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .categories__item {
+    margin-bottom: 30px;
+    padding: 76px 52px 52px;
+  }
+
+  .categories__item::before {
+    top: 91px;
+    left: auto;
+    right: 61px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  .categories__item::after {
+    left: auto;
+    right: 0;
+
+    width: 324px;
+    height: 372px;
+  }
+
+  .categories__item--lose::after {
+    background-position: right 92px top 80px;
+    background-size: 140px 194px;
+  }
+
+  .categories__item--gain::after {
+    background-position: right 28px top 135px;
+    background-size: 268px 112px;
+  }
+
+  .categories__title {
+    margin-left: 0;
+    margin-bottom: 25px;
+
+    font-size: 36px;
+  }
+
+  .categories__text {
+    width: calc(371 / 708 * 100%);
+    min-width: 371px;
+    max-width: 505px;
+    min-height: 96px;
+    padding: 0;
+
+    border-bottom: none;
+  }
+
+  .categories__item--gain .categories__text {
+    min-width: 340px;
+  }
+
+  .categories__link {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-right: 56px;
+
+    @include font-set(20px, 20px);
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .categories {
+    margin-top: 80px;
+  }
+
+  .categories__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .categories__item {
+    width: 570px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .categories__item:last-child {
+    margin-bottom: 40px;
+  }
+
+  .categories__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .categories__item::before {
+    top: 47px;
+    left: 52px;
+    right: auto;
+
+    width: 100px;
+    height: 100px;
+  }
+
+  .categories__item::after {
+    left: 0;
+    right: auto;
+
+    width: 180px;
+    height: 180px;
+  }
+
+  .categories__item--lose::after {
+    background-position: left 66px top 41px;
+    background-size: 70px 97px;
+  }
+
+  .categories__item--gain::after {
+    background-position: left 34px top 69px;
+    background-size: 134px 56px;
+  }
+
+  .categories__title {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+
+  .categories__text {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .categories__link {
+    margin-top: 16px;
+  }
+}
