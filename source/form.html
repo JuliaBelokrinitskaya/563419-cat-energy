@@ -3,37 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы — Cat Energy</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
-    <header>
-      <div>
-        <a href="index.html">
-          <img src="img/logo-icon.svg" width="33" height="38" alt="">
-          <picture>
+  <body class="page">
+    <header class="page__item page-header">
+      <div class="page-header__top">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="page-header__logo-icon" src="img/logo-icon.svg" width="33" height="38" alt="">
+          <picture class="page-header__logo-image">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img src="img/logo-text.svg" width="101" height="18" alt="Cat Energy">
           </picture>
         </a>
-        <nav>
-          <button type="button">
-            <span>Открыть меню</span>
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог продукции</a></li>
-            <li><a>Подбор программы</a></li>
+          <ul class="main-nav__list">
+            <li><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+            <li><a class="main-nav__link main-nav__link--current">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
 
-      <h1>Подбор программы</h1>
+      <h1 class="page-title page__wrapper">Подбор программы</h1>
     </header>
 
-    <main>
+    <main class="page__item page__item--main">
       <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
+<!--       <form action="https://echo.htmlacademy.ru" method="post">
         <div>
           <fieldset>
             <legend>Данные кота</legend>
@@ -115,12 +118,12 @@
           </ul>
         </fieldset>
 
-        <button type="submit">Отправить заявку</button>
+        <button class="btn btn--big" type="submit">Отправить заявку</button>
         <small>* — Обязательные поля</small>
-      </form>
+      </form> -->
     </main>
 
-    <footer>
+    <footer class="page__item">
       <section>
         <h2>Контакты</h2>
         <div>
@@ -132,9 +135,9 @@
         </picture>
       </section>
 
-      <div>
+<!--       <div>
         <div>
-          <a href="index.html">
+          <a class="logo" href="index.html">
             <img src="img/logo-text.svg" width="128" height="24" alt="Cat Energy">
           </a>
         </div>
@@ -174,7 +177,7 @@
             </svg>
           </a>
         </p>
-      </div>
+      </div> -->
     </footer>
   </body>
 </html>

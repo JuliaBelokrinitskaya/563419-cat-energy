@@ -3,34 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог продукции — Cat Energy</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      html {
+        /*background-image: url("prev/catalog-mobile.png");*/
+        background-repeat: no-repeat;
+        /*background-position: top left;*/
+        /*background-position: top center;*/
+        /*background-position: left -70px top 0;*/
+      }
+
+      body {
+        /*opacity: 0.5;*/
+      }
+    </style>
   </head>
 
-  <body>
-    <header>
-      <div>
-        <a href="index.html">
-          <img src="img/logo-icon.svg" width="33" height="38" alt="">
-          <picture>
+  <body class="page">
+    <header class="page__item page-header">
+      <div class="page-header__top">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="page-header__logo-icon" src="img/logo-icon.svg" width="33" height="38" alt="">
+          <picture class="page-header__logo-image">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img src="img/logo-text.svg" width="101" height="18" alt="Cat Energy">
           </picture>
         </a>
-        <nav>
-          <button type="button">
-            <span>Открыть меню</span>
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a>Каталог продукции</a></li>
-            <li><a href="form.html">Подбор программы</a></li>
+          <ul class="main-nav__list">
+            <li><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li><a class="main-nav__link main-nav__link--current">Каталог продукции</a></li>
+            <li><a class="main-nav__link" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
 
-      <h1>Каталог продукции</h1>
+      <h1 class="page-title page__wrapper">Каталог продукции</h1>
     </header>
 
-    <main>
+    <main class="page__item page__item--main">
       <section>
         <h2>Питание Cat Energy</h2>
         <ul>
@@ -59,7 +76,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <a href="#">
@@ -86,7 +103,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <a href="#">
@@ -113,7 +130,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <a href="#">
@@ -140,7 +157,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <a href="#">
@@ -167,7 +184,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <a href="#">
@@ -194,7 +211,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <a href="#">
@@ -221,49 +238,49 @@
                 </tr>
               </table>
             </div>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <h3>Остальные товары</h3>
             <p>Показать еще 100500 товаров</p>
             <p>На самом деле вкусов гораздо больше!</p>
-            <a href="#">Показать все</a>
+            <a class="btn btn--light" href="#">Показать все</a>
           </li>
         </ul>
       </section>
 
-      <section>
+<!--       <section>
         <h2>Дополнительные товары</h2>
         <ul>
           <li>
             <h3>Сахарозаменитель</h3>
             <p>1 упаковка (100 г) <b>200 р.</b></p>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <h3>Питьевая вода</h3>
             <p>5 литров <b>50 р.</b></p>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <h3>Молоко</h3>
             <p>1 литр <b>100 р.</b></p>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
           <li>
             <h3>Витамины</h3>
             <p>1 упаковка (30 г) <b>300 р.</b></p>
-            <a href="#">Заказать</a>
+            <a class="btn" href="#">Заказать</a>
           </li>
         </ul>
         <div>
           <h3>Специальное предложение</h3>
           <p>Закажите все и получите чехол для кота в подарок!</p>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <footer class="page__item">
       <section>
         <h2>Контакты</h2>
         <div>
@@ -275,9 +292,9 @@
         </picture>
       </section>
 
-      <div>
+<!--       <div>
         <div>
-          <a href="index.html">
+          <a class="logo" href="index.html">
             <img src="img/logo-text.svg" width="128" height="24" alt="Cat Energy">
           </a>
         </div>
@@ -317,7 +334,7 @@
             </svg>
           </a>
         </p>
-      </div>
+      </div> -->
     </footer>
   </body>
 </html>
