@@ -6,13 +6,9 @@
   position: relative;
 
   margin-bottom: 20px;
-  padding: 30px 20px 19px;
+  padding: 29px 20px 19px;
 
   background-color: $color-bg-light;
-}
-
-.categories__item:last-child {
-  margin-bottom: 0;
 }
 
 .categories__item::before {
@@ -58,8 +54,8 @@
 
 .categories__title {
   margin-top: 0;
-  margin-left: 70px;
-  margin-bottom: 29px;
+  margin-left: 71px;
+  margin-bottom: 30px;
 
   @include font-primary(24px, 37px);
 
@@ -75,8 +71,8 @@
 
 .categories__link {
   display: inline-block;
-  margin-top: 5px;
   padding-right: 45px;
+  margin-top: 5px;
 
   @include font-primary(16px, 16px);
 
@@ -98,6 +94,7 @@
 
   &:active {
     opacity: 0.3;
+    outline: none;
   }
 }
 
@@ -107,6 +104,29 @@
     padding: 76px 52px 52px;
   }
 
+  .categories__title {
+    margin-left: 0;
+    margin-bottom: 25px;
+
+    font-size: 36px;
+  }
+
+  .categories__text {
+    padding: 0;
+
+    border-bottom: none;
+  }
+
+  .categories__link {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-right: 56px;
+
+    @include font-set(20px, 20px);
+  }
+}
+
+@media (min-width: $width-tablet) and (max-width: $width-desktop - 1px) {
   .categories__item::before {
     top: 91px;
     left: auto;
@@ -134,37 +154,19 @@
     background-size: 268px 112px;
   }
 
-  .categories__title {
-    margin-left: 0;
-    margin-bottom: 25px;
-
-    font-size: 36px;
-  }
-
   .categories__text {
     width: calc(372 / 708 * 100%);
     min-width: 372px;
     max-width: 505px;
     min-height: 96px;
-    padding: 0;
-
-    border-bottom: none;
-  }
-
-  .categories__text span {
-    padding-right: 9px;
   }
 
   .categories__item--gain .categories__text {
     min-width: 343px;
   }
 
-  .categories__link {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    padding-right: 56px;
-
-    @include font-set(20px, 20px);
+  .categories__text span {
+    padding-right: 9px;
   }
 }
 
@@ -186,10 +188,6 @@
     box-sizing: border-box;
   }
 
-  .categories__item:last-child {
-    margin-bottom: 40px;
-  }
-
   .categories__item:nth-child(2n) {
     margin-right: 0;
   }
@@ -197,16 +195,12 @@
   .categories__item::before {
     top: 47px;
     left: 52px;
-    right: auto;
 
     width: 100px;
     height: 100px;
   }
 
   .categories__item::after {
-    left: 0;
-    right: auto;
-
     width: 180px;
     height: 180px;
   }
@@ -224,11 +218,6 @@
   .categories__title {
     margin-left: 162px;
     margin-bottom: 73px;
-  }
-
-  .categories__text {
-    width: 100%;
-    min-height: auto;
   }
 
   .categories__link {
