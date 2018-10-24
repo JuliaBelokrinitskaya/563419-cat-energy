@@ -47,7 +47,7 @@
     z-index: 1;
 
     padding-top: 0;
-    padding-left: $padding-tablet + 88px;
+    padding-left: calc(#{$padding-tablet} + 88px);
     padding-right: $padding-tablet;
     padding-bottom: 529px;
 

@@ -5,38 +5,9 @@ $width-mobile: 320px;
 $width-tablet: 768px;
 $width-desktop: 1300px;
 
-$padding-mobile: 20px;
-$padding-tablet: 30px;
+$padding-mobile: (20px / $width-mobile * 100%);
+$padding-tablet: (30px / $width-tablet * 100%);
 $padding-desktop: 40px;
-
-
-// $width-column: 170px;
-// $width-content: ($width-column * 6);
-
-// $cols-1: $width-column;
-// $cols-2: ($width-column * 2);
-// $cols-3: ($width-column * 3);
-// $cols-4: ($width-column * 4);
-// $cols-5: ($width-column * 5);
-
-// $margin-large: 50px;
-// $margin-large-half: ($margin-large / 2);
-
-// $padding-content: 40px;
-// $padding-section-top: 70px;
-// $padding-section-bottom: 90px;
-
-
-// $text-main: 16px;
-// $text-large: 18px;
-
-// $title-small: 24px;
-// $title-medium: 30px;
-// $title-large: 45px;
-
-// $lh-main: 24px;
-// $lh-loose: 30px;
-// $lh-title: 55px;
 
 
 $white: #ffffff;

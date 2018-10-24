@@ -174,7 +174,7 @@
 
 @media (min-width: $width-desktop) {
   .categories {
-    margin-top: 80px;
+    padding-top: 80px;
   }
 
   .categories__list {
@@ -185,7 +185,7 @@
 
   .categories__item {
     width: 570px;
-    margin-right: 80px;
+    margin-right: auto;
     margin-bottom: 40px;
     box-sizing: border-box;
   }

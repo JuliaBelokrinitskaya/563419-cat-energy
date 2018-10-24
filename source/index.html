@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>Cat Energy — функциональное питание для котов</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ocwaldmedium.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/ocwaldregular.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.css">
-<!--     <style>
+    <style>
       body {
         opacity: 0.5;
       }
@@ -34,7 +36,7 @@
           background-position: top center;
         }
       }
-    </style> -->
+    </style>
   </head>
 
   <body class="page">
@@ -101,48 +103,54 @@
         </ol>
       </section>
 
-<!--       <section>
-        <h2>Живой пример</h2>
-        <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <table>
-          <tbody>
-            <tr>
-              <th scope="row">Снижение веса</th>
-              <td>5 кг</td>
-            </tr>
-            <tr>
-              <th scope="row">Затрачено времени</th>
-              <td>60 дней</td>
-            </tr>
-            <tr>
-              <th scope="row">Затраты на питание</th>
-              <td>15 000 руб.</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="example">
+        <div class="example__wrapper">
+          <div class="example__info">
+            <h2 class="example__title">Живой пример</h2>
+            <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.</p>
+            <table class="example__results">
+              <tbody>
+                <tr class="example__data">
+                  <th scope="row">Снижение веса</th>
+                  <td>5 кг</td>
+                </tr>
+                <tr class="example__data">
+                  <th scope="row">Затрачено времени</th>
+                  <td>60 дней</td>
+                </tr>
+                <tr class="example__total">
+                  <th scope="row">Затраты на питание:</th>
+                  <td>15 000 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <div>
-          <figure>
-            <picture>
-              <img src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот Борис">
-            </picture>
-            <figcaption>Было</figcaption>
-          </figure>
-          <figure>
-            <picture>
-              <img src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот Борис">
-            </picture>
-            <figcaption>Стало</figcaption>
-          </figure>
-          <div>
-            <button type="button">Было</button>
-            <div>
-              <div tabindex="0"></div>
+          <div class="example__compare image-compare">
+            <figure class="image-compare__item">
+              <picture class="image-compare__container image-compare__container--left">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот Борис">
+              </picture>
+              <figcaption class="visually-hidden">Было</figcaption>
+            </figure>
+            <figure class="image-compare__item">
+              <picture class="image-compare__container image-compare__container--right">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                <img src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот Борис">
+              </picture>
+              <figcaption class="visually-hidden">Стало</figcaption>
+            </figure>
+            <div class="image-compare__controls">
+              <button class="image-compare__btn image-compare__btn--left" type="button"><span>Было</span></button>
+              <div class="image-compare__scale">
+                <div class="image-compare__thumb" tabindex="0"></div>
+              </div>
+              <button class="image-compare__btn image-compare__btn--right" type="button"><span>Стало</span></button>
             </div>
-            <button type="button">Стало</button>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <footer class="page__item">
