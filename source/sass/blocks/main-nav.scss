@@ -1,3 +1,7 @@
+.main-nav {
+  border-bottom: 1px solid $color-border-light;
+}
+
 .main-nav__toggle {
   display: none;
 }
@@ -7,20 +11,16 @@
 }
 
 .main-nav__link {
-  display: inline-block;
-  width: 100%;
-  padding: 23px $padding-mobile 22px;
-  box-sizing: border-box;
+  display: block;
+  padding: 22px $padding-mobile 23px;
 
   @include font-primary(20px, 20px, $color-text-dark, 500);
-  vertical-align: baseline;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
   background-color: $color-bg-main;
-  border-bottom: 1px solid $color-border-light;
-  outline: none;
+  border-top: 1px solid $color-border-light;
 
   @include transition-effect(color);
 
@@ -31,10 +31,15 @@
 
   &:active[href] {
     color: rgba($color-text-dark, 0.3);
+    outline: none;
   }
 }
 
 @media (min-width: $width-tablet) {
+  .main-nav {
+    border-bottom: none;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
@@ -42,17 +47,16 @@
   }
 
   .main-nav__link {
-    width: auto;
     margin-top: 10px;
     margin-left: 35px;
     padding: 8px 0 7px;
 
+    @include font-set(18px, 25px);
+
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
 
     background-color: transparent;
-    border-bottom: none;
+    border-top: none;
 
     &--current {
       border-bottom: 2px solid $color-accent;

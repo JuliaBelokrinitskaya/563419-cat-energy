@@ -16,6 +16,8 @@
 .promo__title {
   width: 250px;
   margin: 5px auto 24px;
+
+  @include font-primary(36px, 36px, $color-text-light);
 }
 
 .promo__text {
@@ -30,18 +32,11 @@
 .promo__image {
   @include image-block(280px);
 
-  margin: 0 auto;
+  margin: 0 auto 2px;
 }
 
 @media (max-width: $width-tablet - 1px) {
-  .promo__title {
-    line-height: 36px;
-    color: $color-text-light;
-  }
-
   .promo__btn {
-    margin-top: 2px;
-
     @include font-set(14px, 18px);
   }
 }
@@ -52,7 +47,7 @@
     z-index: 1;
 
     padding-top: 0;
-    padding-left: $padding-tablet + 89px;
+    padding-left: calc(#{$padding-tablet} + 88px);
     padding-right: $padding-tablet;
     padding-bottom: 529px;
 
@@ -64,6 +59,10 @@
   .promo__title {
     width: 486px;
     margin: 34px 0 41px;
+
+    @include font-set(60px, 60px);
+
+    color: $color-text-dark;
   }
 
   .promo__text {
@@ -76,31 +75,31 @@
 
   .promo__image-wrapper {
     position: absolute;
-    left: calc(50% - 354px);
+    left: 0;
     bottom: 0;
     z-index: -1;
+
+    width: 100%;
   }
 
   .promo__image {
     width: 708px;
+    margin-bottom: 0;
   }
 
   .promo__btn {
     min-width: 245px;
     max-width: 426px;
-    margin-top: 0;
   }
 }
 
 @media (min-width: $width-desktop) {
   .promo {
-    max-width: $width-desktop;
-    margin: 0 auto;
+    @include desktop-container;
+
     padding-top: 20px;
     padding-left: $padding-desktop + 80px;
-    padding-right: $padding-desktop;
     padding-bottom: 188px;
-    box-sizing: border-box;
   }
 
   .promo__text {
@@ -108,9 +107,11 @@
   }
 
   .promo__image-wrapper {
-    left: calc(50% - 160px);
+    left: 490px;
     bottom: 55px;
     z-index: 0;
+
+    width: auto;
   }
 
   .promo__image {
