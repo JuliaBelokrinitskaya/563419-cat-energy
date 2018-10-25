@@ -1,0 +1,141 @@
+.page-footer {
+  background-color: $color-bg-light;
+}
+
+.page-footer__logo {
+  min-height: 95px;
+  padding-top: 39px;
+  box-sizing: border-box;
+
+  border-bottom: 1px solid #dadada;
+}
+
+.page-footer__logo-link {
+  position: relative;
+
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+    outline: none;
+  }
+}
+
+.page-footer__logo-link::before {
+  @include link-overlay;
+}
+
+.page-footer__logo-image {
+  @include image-block;
+}
+
+.page-footer__social {
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #dadada;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  padding: 22px 0;
+
+  @include font-set(16px, 16px);
+}
+
+.page-footer__copyright-link {
+  position: relative;
+
+  display: flex;
+
+  width: 100%;
+
+  text-decoration: none;
+  color: $color-text-main;
+
+  outline: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-link::before {
+  @include link-overlay;
+}
+
+.page-footer__copyright-link span {
+  padding-top: 6px;
+}
+
+.page-footer__copyright-link svg {
+  width: 27px;
+  height: 34px;
+  margin-left: auto;
+  padding-left: 23px;
+
+  fill: #666666;
+}
+
+.page-footer__copyright-link:hover svg,
+.page-footer__copyright-link:focus svg,
+.page-footer__copyright-link:active svg {
+  fill: $color-accent;
+}
+
+@media (min-width: $width-tablet) {
+  .page-footer__bottom {
+    display: flex;
+    align-items: flex-start;
+
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .page-footer__logo {
+    flex-shrink: 0;
+
+    width: 192px;
+    min-height: auto;
+    padding-top: 6px;
+
+    border-bottom: none;
+  }
+
+  .page-footer__logo-link {
+    margin: 0;
+  }
+
+  .page-footer__social {
+    flex-grow: 1;
+
+    padding-top: 2px;
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
+
+  .page-footer__copyright {
+    flex-shrink: 0;
+
+    width: 192px;
+    padding: 0;
+
+    text-align: right;
+  }
+
+  .page-footer__copyright-link {
+    justify-content: flex-end;
+  }
+
+  .page-footer__copyright-link svg {
+    margin-left: 0;
+  }
+}

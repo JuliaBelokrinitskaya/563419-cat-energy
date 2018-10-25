@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
-    <link rel="stylesheet" href="css/style.css">
-<!--     <style>
+    <link rel="stylesheet" href="css/style.min.css">
+    <style>
       body {
         opacity: 0.5;
       }
 
       html {
-        background-image: url("prev/index-mobile.png");
+        background-image: url("img/prev-index-mobile.png");
         background-repeat: no-repeat;
         background-position: top center;
       }
 
       @media (min-width: 768px) {
         html {
-          background-image: url("prev/index-tablet.png");
+          background-image: url("img/prev-index-tablet.png");
         }
       }
 
       @media (min-width: 1300px) {
         html {
-          background-image: url("prev/index-desktop.png");
+          background-image: url("img/prev-index-desktop.png");
           background-position: left -70px top 0;
         }
       }
@@ -36,7 +36,7 @@
           background-position: top center;
         }
       }
-    </style> -->
+    </style>
   </head>
 
   <body class="page">
@@ -153,7 +153,7 @@
       </section>
     </main>
 
-    <footer class="page__item">
+    <footer class="page__item page-footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__info">
@@ -168,49 +168,49 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3023921108921!2d30.323217110968304!3d59.93869993984412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1540428701710" width="320" height="362" allowfullscreen></iframe>
       </section>
 
-<!--       <div>
-        <div>
-          <a class="logo">
-            <img src="img/logo-text.svg" width="128" height="24" alt="Cat Energy">
+      <div class="page-footer__bottom page__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link">
+            <img class="page-footer__logo-image" src="img/logo-text.svg" width="128" height="24" alt="Cat Energy">
           </a>
         </div>
 
-        <ul>
+        <ul class="page-footer__social social">
           <li>
-            <a href="#">
-              <svg width="30" height="16" role="presentation" aria-hidden="true">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--vk" width="22" height="12" role="presentation" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
-              <span>Наш ВКонтакте</span>
+              <span class="visually-hidden">Наш ВКонтакте</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <svg width="23" height="23" role="presentation" aria-hidden="true">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--insta" width="16" height="16" role="presentation" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
-              <span>Наш Инстаграм</span>
+              <span class="visually-hidden">Наш Инстаграм</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <svg width="14" height="28" role="presentation" aria-hidden="true">
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--fb" width="10" height="19" role="presentation" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
-              <span>Наш Фейсбук</span>
+              <span class="visually-hidden">Наш Фейсбук</span>
             </a>
           </li>
         </ul>
 
-        <p>
-          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            HTML Academy
+        <p class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span>HTML Academy</span>
             <svg width="27" height="34" role="img" aria-label="Логотип HTML Academy">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </p>
-      </div> -->
+      </div>
     </footer>
 
     <script src="js/svg4everybody.min.js"></script>
