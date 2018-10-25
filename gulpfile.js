@@ -63,9 +63,9 @@ gulp.task('images', function () {
       imagemin.jpegtran({
         progressive: true
       }),
-      mozjpeg({
-        quality: 90
-      }),
+      // mozjpeg({
+      //   quality: 90
+      // }),
       imagemin.svgo({
         plugins: [{
           removeViewBox: false
