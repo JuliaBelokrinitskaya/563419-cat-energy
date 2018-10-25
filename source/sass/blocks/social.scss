@@ -10,6 +10,8 @@
 }
 
 .social__link {
+  position: relative;
+
   display: block;
   margin-right: 28px;
   padding: 5px;
@@ -19,6 +21,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.social__link::before {
+  @include link-overlay;
 }
 
 .social__icon {
