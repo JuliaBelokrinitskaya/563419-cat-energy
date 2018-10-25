@@ -110,7 +110,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src('source/js/*!(.min).js')
+  return gulp.src('source/js/*.js')
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
