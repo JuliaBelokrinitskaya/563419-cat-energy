@@ -7,8 +7,9 @@
 *.pdf
 *.psd
 *.sublime*
-source/prev/
+build/
 node_modules/
 npm-debug.*
 source/css/*.css
+source/img/prev*.png
 Thumbs.db
