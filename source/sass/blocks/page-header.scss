@@ -32,7 +32,7 @@
 
 .page-header__logo-image {
   display: block;
-  padding: 24px 0 23px;
+  padding: 24px 0 22px;
 }
 
 .page-header__logo-image img {
@@ -92,6 +92,12 @@
     background-size:
       720px 696px,
       100% 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/bg-index-desktop@2x.jpg"),
+        linear-gradient(to right, transparent 50%, #65a93c 50%);
+    }
   }
 
   .page-header__top {
