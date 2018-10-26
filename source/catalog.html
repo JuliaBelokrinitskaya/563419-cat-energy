@@ -4,21 +4,39 @@
     <meta charset="utf-8">
     <title>Каталог продукции — Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-      html {
-        /*background-image: url("prev/catalog-mobile.png");*/
-        background-repeat: no-repeat;
-        /*background-position: top left;*/
-        /*background-position: top center;*/
-        /*background-position: left -70px top 0;*/
-      }
-
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+<!--     <style>
       body {
-        /*opacity: 0.5;*/
+        opacity: 0.5;
       }
-    </style>
+
+      html {
+        background-image: url("img/prev-catalog-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+
+      @media (min-width: 768px) {
+        html {
+          background-image: url("img/prev-catalog-tablet.png");
+        }
+      }
+
+      @media (min-width: 1300px) {
+        html {
+          background-image: url("img/prev-catalog-desktop.png");
+          background-position: left -70px top 0;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        html {
+          background-position: top center;
+        }
+      }
+    </style> -->
   </head>
 
   <body class="page">
@@ -48,20 +66,21 @@
     </header>
 
     <main class="page__item page__item--main">
-      <section>
-        <h2>Питание Cat Energy</h2>
-        <ul>
-          <li>
-            <a href="#">
+      <section class="catalog">
+        <h2 class="visually-hidden">Питание Cat Energy</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item product">
+            <a class="product__image" href="#">
               <picture>
+                <source media="(min-width: 768px)" srcset="img/chicken-small-desktop@1x.png">
                 <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Курица 500 грамм">
               </picture>
             </a>
-            <div>
-              <a href="#">
-                <h3>Cat Energy Pro 500 г</h3>
+            <div class="product__info">
+              <a class="product__link" href="#">
+                <h3 class="product__title"><span class="product__brand">Cat Energy</span> Pro <span class="product__weight">500 г</span></h3>
               </a>
-              <table>
+              <table class="product__data">
                 <tr>
                   <th scope="row">Объем</th>
                   <td>500 г</td>
@@ -72,23 +91,24 @@
                 </tr>
                 <tr>
                   <th scope="row">Цена</th>
-                  <td>700 р.</td>
+                  <td>700 Р.</td>
                 </tr>
               </table>
             </div>
-            <a class="btn" href="#">Заказать</a>
+            <a class="product__btn btn" href="#">Заказать</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="catalog__item product">
+            <a class="product__image" href="#">
               <picture>
+                <source media="(min-width: 768px)" srcset="img/chicken-big-desktop@1x.png">
                 <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Курица 1000 грамм">
               </picture>
             </a>
-            <div>
-              <a href="#">
-                <h3>Cat Energy Pro 1000 г</h3>
+            <div class="product__info">
+              <a class="product__link" href="#">
+                <h3 class="product__title"><span class="product__brand">Cat Energy</span> Pro <span class="product__weight">1000 г</span></h3>
               </a>
-              <table>
+              <table class="product__data">
                 <tr>
                   <th scope="row">Объем</th>
                   <td>1000 г</td>
@@ -99,23 +119,24 @@
                 </tr>
                 <tr>
                   <th scope="row">Цена</th>
-                  <td>1000 р.</td>
+                  <td>1000 Р.</td>
                 </tr>
               </table>
             </div>
-            <a class="btn" href="#">Заказать</a>
+            <a class="product__btn btn" href="#">Заказать</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="catalog__item product">
+            <a class="product__image" href="#">
               <picture>
+                <source media="(min-width: 768px)" srcset="img/fish-small-desktop@1x.png">
                 <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Рыба 500 грамм">
               </picture>
             </a>
-            <div>
-              <a href="#">
-                <h3>Cat Energy Pro 500 г</h3>
+            <div class="product__info">
+              <a class="product__link" href="#">
+                <h3 class="product__title"><span class="product__brand">Cat Energy</span> Pro <span class="product__weight">500 г</span></h3>
               </a>
-              <table>
+              <table class="product__data">
                 <tr>
                   <th scope="row">Объем</th>
                   <td>500 г</td>
@@ -126,23 +147,24 @@
                 </tr>
                 <tr>
                   <th scope="row">Цена</th>
-                  <td>700 р.</td>
+                  <td>700 Р.</td>
                 </tr>
               </table>
             </div>
-            <a class="btn" href="#">Заказать</a>
+            <a class="product__btn btn" href="#">Заказать</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="catalog__item product">
+            <a class="product__image" href="#">
               <picture>
+                <source media="(min-width: 768px)" srcset="img/fish-big-desktop@1x.png">
                 <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Pro Рыба 1000 грамм">
               </picture>
             </a>
-            <div>
-              <a href="#">
-                <h3>Cat Energy Pro 1000 г</h3>
+            <div class="product__info">
+              <a class="product__link" href="#">
+                <h3 class="product__title"><span class="product__brand">Cat Energy</span> Pro <span class="product__weight">1000 г</span></h3>
               </a>
-              <table>
+              <table class="product__data">
                 <tr>
                   <th scope="row">Объем</th>
                   <td>1000 г</td>
@@ -153,23 +175,24 @@
                 </tr>
                 <tr>
                   <th scope="row">Цена</th>
-                  <td>1000 р.</td>
+                  <td>1000 Р.</td>
                 </tr>
               </table>
             </div>
-            <a class="btn" href="#">Заказать</a>
+            <a class="product__btn btn" href="#">Заказать</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="catalog__item product">
+            <a class="product__image" href="#">
               <picture>
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-desktop@1x.png">
                 <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Гречка 500 грамм">
               </picture>
             </a>
-            <div>
-              <a href="#">
-                <h3>Cat Energy Slim 500 г</h3>
+            <div class="product__info">
+              <a class="product__link" href="#">
+                <h3 class="product__title"><span class="product__brand">Cat Energy</span> Slim <span class="product__weight">500 г</span></h3>
               </a>
-              <table>
+              <table class="product__data">
                 <tr>
                   <th scope="row">Объем</th>
                   <td>500 г</td>
@@ -180,23 +203,24 @@
                 </tr>
                 <tr>
                   <th scope="row">Цена</th>
-                  <td>400 р.</td>
+                  <td>400 Р.</td>
                 </tr>
               </table>
             </div>
-            <a class="btn" href="#">Заказать</a>
+            <a class="product__btn btn" href="#">Заказать</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="catalog__item product">
+            <a class="product__image" href="#">
               <picture>
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-desktop@1x.png">
                 <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Гречка 1000 грамм">
               </picture>
             </a>
-            <div>
-              <a href="#">
-                <h3>Cat Energy Slim 1000 г</h3>
+            <div class="product__info">
+              <a class="product__link" href="#">
+                <h3 class="product__title"><span class="product__brand">Cat Energy</span> Slim <span class="product__weight">1000 г</span></h3>
               </a>
-              <table>
+              <table class="product__data">
                 <tr>
                   <th scope="row">Объем</th>
                   <td>1000 г</td>
@@ -207,23 +231,24 @@
                 </tr>
                 <tr>
                   <th scope="row">Цена</th>
-                  <td>700 р.</td>
+                  <td>700 Р.</td>
                 </tr>
               </table>
             </div>
-            <a class="btn" href="#">Заказать</a>
+            <a class="product__btn btn" href="#">Заказать</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="catalog__item product">
+            <a class="product__image" href="#">
               <picture>
+                <source media="(min-width: 768px)" srcset="img/rice-small-desktop@1x.png">
                 <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim Рис 500 грамм">
               </picture>
             </a>
-            <div>
-              <a href="#">
-                <h3>Cat Energy Slim 500 г</h3>
+            <div class="product__info">
+              <a class="product__link" href="#">
+                <h3 class="product__title"><span class="product__brand">Cat Energy</span> Slim <span class="product__weight">500 г</span></h3>
               </a>
-              <table>
+              <table class="product__data">
                 <tr>
                   <th scope="row">Объем</th>
                   <td>500 г</td>
@@ -234,11 +259,11 @@
                 </tr>
                 <tr>
                   <th scope="row">Цена</th>
-                  <td>500 р.</td>
+                  <td>500 Р.</td>
                 </tr>
               </table>
             </div>
-            <a class="btn" href="#">Заказать</a>
+            <a class="product__btn btn" href="#">Заказать</a>
           </li>
           <li>
             <h3>Остальные товары</h3>

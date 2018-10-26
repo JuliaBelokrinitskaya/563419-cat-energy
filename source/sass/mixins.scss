@@ -31,10 +31,6 @@
   width: $width;
   height: $height;
   overflow: hidden;
-
-  color: $color-text-dark;
-
-  background-color: darken($color-bg-light, 20%);
 }
 
 @mixin image-block($width: auto) {

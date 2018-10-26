@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  padding: 10px 10px 12px;
+  padding: 10px;
   box-sizing: border-box;
 
   @include font-primary(16px, 20px, $color-text-light);
