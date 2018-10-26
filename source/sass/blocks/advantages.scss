@@ -43,19 +43,19 @@
 }
 
 .advantages__item:nth-child(1)::before {
-  background-image: url("../img/advantage-leaf@1x.png");
+  background-image: url("../img/icon-advantage-leaf@1x.png");
 }
 
 .advantages__item:nth-child(2)::before {
-  background-image: url("../img/advantage-powder@1x.png");
+  background-image: url("../img/icon-advantage-powder@1x.png");
 }
 
 .advantages__item:nth-child(3)::before {
-  background-image: url("../img/advantage-dining@1x.png");
+  background-image: url("../img/icon-advantage-dining@1x.png");
 }
 
 .advantages__item:nth-child(4)::before {
-  background-image: url("../img/advantage-clock@1x.png");
+  background-image: url("../img/icon-advantage-clock@1x.png");
 }
 
 @media (min-width: $width-tablet) {
@@ -79,6 +79,8 @@
     flex-wrap: wrap;
 
     margin-bottom: -31px;
+
+    overflow: hidden;
   }
 
   .advantages__item {
