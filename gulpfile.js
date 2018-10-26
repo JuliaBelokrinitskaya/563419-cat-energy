@@ -155,7 +155,7 @@ gulp.task('server', function () {
   gulp.watch('source/img/*.svg', gulp.series('images', 'refresh'));
   gulp.watch('source/img/sprite/*.svg', gulp.series('images', 'sprite', 'refresh'));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
-  gulp.watch('source/js/.js', gulp.series('scripts', 'refresh'));
+  gulp.watch('source/js/*.js', gulp.series('scripts', 'refresh'));
   gulp.watch('source/*.html', gulp.series('html', 'refresh'));
 });
 
