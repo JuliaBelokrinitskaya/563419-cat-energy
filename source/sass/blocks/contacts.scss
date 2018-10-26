@@ -7,6 +7,10 @@
 
   padding: 28px $padding-mobile 26px;
 
+  background-color: transparent;
+}
+
+.contacts--home .contacts__info {
   background-color: $color-bg-main;
 }
 
@@ -100,6 +104,8 @@
     padding-left: 76px;
     padding-right: 40px;
     box-sizing: border-box;
+
+    background-color: $color-bg-main;
   }
 
   .contacts__lead {
