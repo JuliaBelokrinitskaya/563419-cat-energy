@@ -7,6 +7,36 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
+    <style>
+      body {
+        opacity: 0.5;
+      }
+
+      html {
+        background-image: url("img/prev-form-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+
+      @media (min-width: 768px) {
+        html {
+          background-image: url("img/prev-form-tablet.png");
+        }
+      }
+
+      @media (min-width: 1300px) {
+        html {
+          background-image: url("img/prev-form-desktop.png");
+          background-position: left -70px top 0;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        html {
+          background-position: top center;
+        }
+      }
+    </style>
   </head>
 
   <body class="page">

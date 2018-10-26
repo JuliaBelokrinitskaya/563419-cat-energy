@@ -1,0 +1,150 @@
+.supplements {
+  padding-bottom: 35px;
+}
+
+.supplements__list {
+  @include list-reset;
+
+  margin-bottom: 39px;
+}
+
+.supplements__item {
+  padding-top: 13px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid $color-border-main;
+}
+
+.supplements__item:first-child {
+  border-top: 1px solid $color-border-main;
+}
+
+.supplements__item-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+
+  @include font-primary(16px, 16px);
+
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.supplements__info {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @include font-set(14px, 14px);
+}
+
+.supplements__price {
+  margin-left: auto;
+
+  text-transform: uppercase;
+}
+
+@media (min-width: $width-tablet) {
+  .supplements {
+    padding-bottom: 76px;
+  }
+
+  .supplements__list {
+    margin-bottom: 70px;
+  }
+
+  .supplements__item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .supplements__item-title {
+    @include font-set(20px, 20px);
+  }
+
+  .supplements__info {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $width-tablet) and (max-width: $width-desktop - 1px) {
+  .supplements__item {
+    flex-wrap: wrap;
+
+    padding: 25px 37px 27px;
+    margin-bottom: -1px;
+
+    border: 1px solid rgba($color-border-main, 0.5);
+  }
+
+  .supplements__item-title {
+    width: 50%;
+    margin-bottom: 26px;
+  }
+
+  .supplements__info {
+    justify-content: flex-end;
+
+    width: 50%;
+    margin-top: 6px;
+
+    text-align: right;
+  }
+
+  .supplements__price {
+    width: 95px;
+    margin-left: 0;
+  }
+
+  .supplements__btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .supplements {
+    padding-bottom: 86px;
+  }
+
+  .supplements__wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .supplements__list {
+    width: 895px;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .supplements__item {
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+
+  .supplements__item-title {
+    width: 285px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .supplements__info {
+    width: 325px;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .supplements__price {
+    width: 60px;
+    padding-right: 20px;
+  }
+
+  .supplements__btn {
+    width: 245px;
+  }
+
+  .supplements__gift {
+    width: 245px;
+    box-sizing: border-box;
+  }
+}
