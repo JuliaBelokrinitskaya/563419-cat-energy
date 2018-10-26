@@ -11,6 +11,12 @@
   background-size:
     320px 305px,
     100% 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/bg-index-mobile@2x.jpg"),
+      linear-gradient(to bottom, #65a93c 305px, transparent 305px);
+  }
 }
 
 .promo__title {
@@ -37,6 +43,8 @@
 
 @media (max-width: $width-tablet - 1px) {
   .promo__btn {
+    padding-bottom: 12px;
+
     @include font-set(14px, 18px);
   }
 }

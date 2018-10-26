@@ -7,36 +7,6 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
-<!--     <style>
-      body {
-        opacity: 0.5;
-      }
-
-      html {
-        background-image: url("img/prev-index-mobile.png");
-        background-repeat: no-repeat;
-        background-position: top center;
-      }
-
-      @media (min-width: 768px) {
-        html {
-          background-image: url("img/prev-index-tablet.png");
-        }
-      }
-
-      @media (min-width: 1300px) {
-        html {
-          background-image: url("img/prev-index-desktop.png");
-          background-position: left -70px top 0;
-        }
-      }
-
-      @media (min-width: 1440px) {
-        html {
-          background-position: top center;
-        }
-      }
-    </style> -->
   </head>
 
   <body class="page">
@@ -67,9 +37,12 @@
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <div class="promo__image-wrapper">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat Energy Pro со вкусом курицы">
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/index-can-desktop@1x.webp 1x, img/webp/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/index-can-tablet@1x.webp 1x, img/webp/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/index-can-mobile@1x.webp 1x, img/webp/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Cat Energy Pro со вкусом курицы">
           </picture>
         </div>
         <a class="promo__btn btn btn--big" href="form.html">Подобрать программу</a>
@@ -129,15 +102,23 @@
           <div class="example__compare image-compare">
             <figure class="image-compare__item">
               <picture class="image-compare__container image-compare__container--left">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот Борис">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/before-desktop@1x.webp 1x, img/webp/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/before-tablet@1x.webp 1x, img/webp/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/before-mobile@1x.webp 1x, img/webp/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Толстый кот Борис">
               </picture>
               <figcaption class="visually-hidden">Было</figcaption>
             </figure>
             <figure class="image-compare__item">
               <picture class="image-compare__container image-compare__container--right">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                <img src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот Борис">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/after-desktop@1x.webp 1x, img/webp/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/after-tablet@1x.webp 1x, img/webp/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/after-mobile@1x.webp 1x, img/webp/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Худой кот Борис">
               </picture>
               <figcaption class="visually-hidden">Стало</figcaption>
             </figure>
@@ -154,16 +135,19 @@
     </main>
 
     <footer class="page__item page-footer">
-      <section class="contacts">
+      <section class="contacts contacts--home">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__info">
           <p class="contacts__lead">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <picture class="contacts__map-wrapper">
-          <source media="(min-width: 1300px)" srcset="img/map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png">
-          <img class="contacts__map-image" src="img/map-mobile@1x.png" width="320" height="362" alt="Наш офис по адресу: Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/map-desktop@1x.webp 1x, img/webp/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map-tablet@1x.webp 1x, img/webp/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/map-mobile@1x.webp 1x, img/webp/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+          <img class="contacts__map-image" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="320" height="362" alt="Наш офис по адресу: Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
         </picture>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3023921108921!2d30.323217110968304!3d59.93869993984412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1540428701710" width="320" height="362" allowfullscreen></iframe>
       </section>
@@ -216,5 +200,6 @@
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>
