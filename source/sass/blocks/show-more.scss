@@ -47,9 +47,9 @@
   .show-more {
     position: relative;
 
-    min-height: 432px;
+    min-height: 431px;
     margin-top: 100px;
-    padding: 163px 38px 40px;
+    padding: 163px 38px 39px;
   }
 
   .show-more::before {
@@ -78,7 +78,7 @@
 
   .show-more__btn {
     position: absolute;
-    bottom: 40px;
+    bottom: 39px;
 
     width: calc(100% - 38px * 2);
   }

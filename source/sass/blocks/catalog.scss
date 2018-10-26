@@ -1,5 +1,7 @@
 .catalog__list {
   @include list-reset;
+
+  margin-bottom: 1px;
 }
 
 .catalog__item {
@@ -15,6 +17,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+
+    margin-bottom: 0;
   }
 
   .catalog__item {
@@ -31,6 +35,8 @@
 @media (min-width: $width-desktop) {
   .catalog {
     @include desktop-container;
+
+    padding-bottom: 7px;
   }
 
   .catalog__item {

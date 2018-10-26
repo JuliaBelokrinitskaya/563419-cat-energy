@@ -1,0 +1,82 @@
+.gift {
+  position: relative;
+
+  padding: 186px 0 27px;
+
+  text-align: center;
+  color: $color-text-light;
+
+  background-color: #65a93c;
+  background-image: url("../img/bg-gift-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 280px 289px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-gift-mobile@2x.jpg");
+  }
+}
+
+.gift::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 160px;
+
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center 65px;
+  background-size: 65px 60px;
+}
+
+.gift__text {
+  width: 170px;
+  margin: 0 auto 16px;
+
+  @include font-set(16px, 20px);
+}
+
+@media (min-width: $width-tablet) and (max-width: $width-desktop - 1px) {
+  .gift {
+    padding-top: 71px;
+    padding-left: calc(50% + 70px);
+    padding-right: 0;
+    padding-bottom: 69px;
+
+    text-align: left;
+
+    background-image: url("../img/bg-gift-tablet@1x.jpg");
+    background-size: 708px 200px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-gift-tablet@2x.jpg");
+    }
+  }
+
+  .gift::before {
+    width: 50%;
+    height: 160px;
+
+    background-position: right 204px top 65px;
+  }
+
+  .gift__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .gift {
+    background-image: url("../img/bg-gift-desktop@1x.jpg");
+    background-size: 245px 289px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-gift-desktop@2x.jpg");
+    }
+  }
+}

@@ -7,36 +7,6 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
-<!--     <style>
-      body {
-        opacity: 0.5;
-      }
-
-      html {
-        background-image: url("img/prev-catalog-mobile.png");
-        background-repeat: no-repeat;
-        background-position: top center;
-      }
-
-      @media (min-width: 768px) {
-        html {
-          background-image: url("img/prev-catalog-tablet.png");
-        }
-      }
-
-      @media (min-width: 1300px) {
-        html {
-          background-image: url("img/prev-catalog-desktop.png");
-          background-position: left -70px top 0;
-        }
-      }
-
-      @media (min-width: 1440px) {
-        html {
-          background-position: top center;
-        }
-      }
-    </style> -->
   </head>
 
   <body class="page">
@@ -302,35 +272,39 @@
         </ul>
       </section>
 
-<!--       <section>
-        <h2>Дополнительные товары</h2>
-        <ul>
-          <li>
-            <h3>Сахарозаменитель</h3>
-            <p>1 упаковка (100 г) <b>200 р.</b></p>
-            <a class="btn" href="#">Заказать</a>
-          </li>
-          <li>
-            <h3>Питьевая вода</h3>
-            <p>5 литров <b>50 р.</b></p>
-            <a class="btn" href="#">Заказать</a>
-          </li>
-          <li>
-            <h3>Молоко</h3>
-            <p>1 литр <b>100 р.</b></p>
-            <a class="btn" href="#">Заказать</a>
-          </li>
-          <li>
-            <h3>Витамины</h3>
-            <p>1 упаковка (30 г) <b>300 р.</b></p>
-            <a class="btn" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div>
-          <h3>Специальное предложение</h3>
-          <p>Закажите все и получите чехол для кота в подарок!</p>
+      <section class="supplements section">
+        <div class="section__title-wrapper">
+          <h2 class="section__title">Дополнительные товары</h2>
         </div>
-      </section> -->
+        <div class="supplements__wrapper page__wrapper">
+          <ul class="supplements__list">
+            <li class="supplements__item">
+              <h3 class="supplements__item-title">Сахарозаменитель</h3>
+              <p class="supplements__info">1 упаковка (100 г) <span class="supplements__price">200 р.</span></p>
+              <a class="supplements__btn btn" href="#">Заказать</a>
+            </li>
+            <li class="supplements__item">
+              <h3 class="supplements__item-title">Питьевая вода</h3>
+              <p class="supplements__info">5 литров <span class="supplements__price">50 р.</span></p>
+              <a class="supplements__btn btn" href="#">Заказать</a>
+            </li>
+            <li class="supplements__item">
+              <h3 class="supplements__item-title">Молоко</h3>
+              <p class="supplements__info">1 литр <span class="supplements__price">100 р.</span></p>
+              <a class="supplements__btn btn" href="#">Заказать</a>
+            </li>
+            <li class="supplements__item">
+              <h3 class="supplements__item-title">Витамины</h3>
+              <p class="supplements__info">1 упаковка (30 г) <span class="supplements__price">300 р.</span></p>
+              <a class="supplements__btn btn" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="supplements__gift gift">
+            <h3 class="visually-hidden">Специальное предложение</h3>
+            <p class="gift__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page__item page-footer">
@@ -399,6 +373,6 @@
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
     <script src="js/picturefill.min.js"></script>
-    <!-- <script src="js/app.min.js"></script> -->
+    <script src="js/app.min.js"></script>
   </body>
 </html>
