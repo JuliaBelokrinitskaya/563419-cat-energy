@@ -2,19 +2,18 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 14px;
-  padding-bottom: 29px;
+  padding-bottom: 14px;
 
   @include font-primary(36px, 60px);
 
   @media (min-width: $width-tablet) {
     padding-top: 34px;
-    padding-bottom: 65px;
+    padding-bottom: 55px;
 
     font-size: 60px;
   }
 
   @media (min-width: $width-desktop) {
     padding-top: 20px;
-    padding-bottom: 66px;
   }
 }
