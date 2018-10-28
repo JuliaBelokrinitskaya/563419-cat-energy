@@ -1,0 +1,86 @@
+.choose-plan {
+  padding-top: 11px;
+  padding-bottom: 31px;
+}
+
+.choose-plan__text {
+  width: 240px;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @include font-primary(14px, 18px);
+
+  text-transform: uppercase;
+}
+
+.choose-plan__cat-info {
+  margin-bottom: 23px;
+}
+
+.choose-plan__bottom {
+  margin-top: 34px;
+
+  text-align: center;
+}
+
+.choose-plan__btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .choose-plan {
+    padding-top: 0;
+    padding-bottom: 34px;
+  }
+
+  .choose-plan__text {
+    width: 350px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+
+    @include font-set(20px, 30px);
+  }
+
+  .choose-plan__cat-info {
+    margin-bottom: 8px;
+  }
+
+  .choose-plan__goal {
+    margin-bottom: 11px;
+  }
+
+  .choose-plan__bottom {
+    display: flex;
+
+    margin-top: 31px;
+
+    text-align: left;
+  }
+
+  .choose-plan__btn {
+    width: calc(50% - 32px);
+    margin-right: 62px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .choose-plan {
+    padding-top: 1px;
+    padding-bottom: 44px;
+  }
+
+  .choose-plan__text {
+    margin-left: 0;
+  }
+
+  .choose-plan__bottom {
+    margin-top: 39px;
+  }
+
+  .choose-plan__btn {
+    width: 570px;
+    margin-right: 82px;
+  }
+}
