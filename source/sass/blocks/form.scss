@@ -188,6 +188,20 @@
   fill: #222222;
 }
 
+.form__input[type="email"] + .form__input-icon {
+  top: 16px;
+
+  width: 17px;
+  height: 13px;
+}
+
+.form__input[type="tel"] + .form__input-icon {
+  top: 13px;
+
+  width: 20px;
+  height: 20px;
+}
+
 .form__input:focus + .form__input-icon {
   fill: $color-accent;
 }
@@ -286,6 +300,14 @@
 
   .form__input-icon {
     left: calc(100% - 38px);
+  }
+
+  .form__input[type="email"] + .form__input-icon {
+    top: 20px;
+  }
+
+  .form__input[type="tel"] + .form__input-icon {
+    top: 17px;
   }
 
   .form__input--textarea {

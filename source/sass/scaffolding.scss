@@ -41,6 +41,6 @@ body {
   }
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   @include visually-hidden;
 }
