@@ -100,6 +100,13 @@
   border-color: #bababa;
 }
 
+.form__radio:focus + .form__label--radio,
+.form__check:focus + .form__label--check {
+  box-shadow:
+    0 0 0 4px $color-bg-main,
+    0 0 0 6px $color-text-main;
+}
+
 .form__radio:checked + .form__label--radio::after {
   content: "";
 
@@ -270,6 +277,7 @@
 
   .form__label--radio,
   .form__label--check {
+    margin-right: 0;
     padding-left: 60px;
   }
 
